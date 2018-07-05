@@ -1,9 +1,11 @@
+
 .header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  background-color: grey;
+  background-color: white;
+  border-bottom: 5px solid black;
 }
 
 .navigation {
@@ -12,14 +14,41 @@
   justify-content: flex-start;
   justify-content: space-around;
 }
+
 .navigation a {
   padding: 20px 50px;
-  border: 5px solid white;
+  border: 5px solid #3A539B;
   margin-right: 2px;
 
 }
+
 #logo {
-  height: 90px;
+  height: 70px;
   float: left;
-  padding: 30px 40px;
+  padding: 25px 30px;
+}
+
+.core {
+  height: 100vh;
+}
+
+.static_core  {
+  width: 295.13px;
+  border-right: 5px solid black;
+  height: 100%;
+  padding-right: 2px;
+}
+
+.button {
+  width: inherit;
+  height: 70px;
+  background-color:#3A539B;
+  border: none;
+  font-size: 16px;
+  color: white;
+  margin-top: 2px;
+}
+
+.button:hover {
+  background-color: hsl(255, 46%, 39%);
 }
