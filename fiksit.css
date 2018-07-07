@@ -5,7 +5,7 @@
   flex-direction: row;
   align-items: center;
   background-color: white;
-  border-bottom: 5px solid #2B818D;
+  border-bottom: 1px solid #E6EAEA;
 }
 
 .navigation {
@@ -24,6 +24,9 @@
   color: white;
   font-family: Verdana;
   text-decoration: none;
+  transition: background 0.3s ease-in-out,
+              border 0.3s ease-in-out,
+              color 0.3s ease-in-out;
 
 }
 
@@ -43,35 +46,85 @@
 
 .static_core  {
   width: 295.13px;
-  border-right: 5px solid #2B818D;
+  border-right: 1px solid #E6EAEA;
   height: 100%;
-  padding-right: 2px;
 }
 
-.collapsible {
+ .brand_button {
   width: inherit;
   height: 70px;
-  background-color:#8295CC;
+  background-color: white;
   border: none;
   font-size: 16px;
-  color: white;
-  margin-top: 2px;
+  color: black;
   padding: 0;
+  border: none;
+  transition: background 0.3s ease-in-out,
+              border 0.3s ease-in-out,
+              color 0.3s ease-in-out;
+
 }
 
-.collapsible:hover {
-  background: linear-gradient(#3A539B, #8295CC);
+.bactive, .active, .brand_button:hover {
+  background: #f4f7f6;
+}
+
+.bactive {
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
 }
 
 .brand_model {
   display: none;
-
+  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 280px;
+  flex: wrap;
+  transform: translateX(-280px);
+  transition: background 0.3s ease-in-out;
+}
+.brand {
+  width: 295px;
+  height: 70px;
+  background-color:white;
+  border-top: 1px solid #E6EAEA;
+  font-size: 16px;
+  color: white;
+  color: black;
+  border-bottom:none;
+  border-left: none;
+  border-right: none;
+  transition: background 0.3s ease-in-out,
+              border 0.3s ease-in-out,
+              color 0.3s ease-in-out,
+}
+.brand:hover {
+  background-color: #f4f7f6;
 }
 
+.repair_list {
+display: none;
+}
+
+.brand_button:focus {
+  outline:none;
+}
+
+
 .base {
-  width: inherit;
+  width: inherit + 1px;
   height: 100vh;
-  background: linear-gradient(#8295CC, #2B818D);
   border-top: 5px solid #2B818D;
-  border-top-width: 100% + 2px;
+}
+
+.brand_model button {
+  -webkit-transition: height 0.3s ease-in;
+            -moz-transition: height 0.3s ease-in;
+            -o-transition: height 0.3s ease-in;
+            -ms-transition: height 0.3s ease-in;
+            transition: height 0.3s ease-in;
 }
