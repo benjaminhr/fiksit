@@ -5,7 +5,7 @@
   flex-direction: row;
   align-items: center;
   background-color: white;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #2B818D;
 }
 
 .navigation {
@@ -13,13 +13,22 @@
   display: flex;
   justify-content: flex-start;
   justify-content: space-around;
+  margin-right: 36.89375px:
 }
 
 .navigation a {
   padding: 20px 50px;
-  border: 5px solid #3A539B;
-  margin-right: 2px;
+  border: 3px solid #3A539B;
+  margin-left: 4px;
+  background-color:#3A539B;
+  color: white;
+  font-family: Verdana;
+  text-decoration: none;
 
+}
+
+.navigation a:hover {
+  background-color: #E69044;
 }
 
 #logo {
@@ -34,21 +43,33 @@
 
 .static_core  {
   width: 295.13px;
-  border-right: 5px solid black;
+  border-right: 5px solid #2B818D;
   height: 100%;
   padding-right: 2px;
 }
 
-.brand_button {
+.collapsible {
   width: inherit;
   height: 70px;
-  background-color:#3A539B;
+  background-color:#8295CC;
   border: none;
   font-size: 16px;
   color: white;
   margin-top: 2px;
+  border: 3px solid #8295CC;
 }
 
-.button:hover {
-  background-color: hsl(255, 46%, 39%);
+.collapsible:hover {
+  background-color: #FFC997;
+}
+
+.brand_model {
+
+}
+
+.base {
+  height: 100vh;
+  background-color: #3A539B;
+  border-top: 5px solid #2B818D;
+  border-top-width: 100% + 2px;
 }
