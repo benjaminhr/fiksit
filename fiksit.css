@@ -28,7 +28,7 @@
 }
 
 .navigation a:hover {
-  background-color: #E69044;
+  background: linear-gradient(#3A539B, #2B818D);
 }
 
 #logo {
@@ -56,20 +56,22 @@
   font-size: 16px;
   color: white;
   margin-top: 2px;
-  border: 3px solid #8295CC;
+  padding: 0;
 }
 
 .collapsible:hover {
-  background-color: #FFC997;
+  background: linear-gradient(#3A539B, #8295CC);
 }
 
 .brand_model {
+  display: none;
 
 }
 
 .base {
+  width: inherit;
   height: 100vh;
-  background-color: #3A539B;
+  background: linear-gradient(#8295CC, #2B818D);
   border-top: 5px solid #2B818D;
   border-top-width: 100% + 2px;
 }
